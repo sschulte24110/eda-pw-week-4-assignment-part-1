@@ -90,7 +90,7 @@ console.log(isFirstLetter('s', string));
 
 // 9. Function to return the sum of all numbers in an array
 
-const array2 = [3, 6, 9, 12]
+const array2 = [3, 6, -9, 12]
 function sumAll(array2) {
   let sum = 0;
   // TODO: loop to add items
@@ -105,10 +105,16 @@ console.log(sumAll(array2));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+function allPositive(array2) {
+  let positive = [];
+  for (let i = 0; i < array2.length; i++) {
+    if (array2[i] > 0) {
+      positive.push(array2[i]);
+    }
+  }
+  return positive;
 }
-
+console.log(allPositive(array2));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
