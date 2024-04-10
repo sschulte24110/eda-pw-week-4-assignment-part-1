@@ -50,6 +50,7 @@ function isPositive(number) {
 // Write a separate console.log statement for each outcome
 console.log(isPositive(3.14159));
 console.log(isPositive(-3.14159));
+console.log(isPositive(-12345));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -76,18 +77,30 @@ console.log(find(24, array));
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+
+let string = '';
 function isFirstLetter(letter, string) {
-
+  if (string.charAt(0) === letter){
+    return true;
+  } else {
+    return false;
+  }
 }
-
+console.log(isFirstLetter('s', string));
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll(array) {
+
+const array2 = [3, 6, 9, 12]
+function sumAll(array2) {
   let sum = 0;
   // TODO: loop to add items
-
+    for (let i = 0; i < array2.length; i++) {
+      sum += array2[i];
+    }
   // TODO: return the sum
+     return sum; 
 }
+console.log(sumAll(array2));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
