@@ -124,7 +124,7 @@ console.log(array2);
 // multiplier. The function would multiply each element in the array by the multiplier and 
 // return a new array.
 
-// I created array3 for testing purposes.
+// I created array3 and array4 for testing purposes.
 // Function multiply takes in 2 values, array and multiplier.
 // newArray is where the new values are going to be stored.
 // for loop will loop through the each value in the array (i < array.length) taking each value
