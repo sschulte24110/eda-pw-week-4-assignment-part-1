@@ -41,9 +41,8 @@ console.log(multiplyThree(1, 2, 3));
 function isPositive(number) {
   if (number > 0) {
     return true;
-  } else {
+  } 
     return false;
-  }
 }
 
 // Call the function to test each outcome (true & false) 
