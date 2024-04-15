@@ -49,15 +49,27 @@ function isPositive(number) {
 // Write a separate console.log statement for each outcome
 console.log(isPositive(3.14159));
 console.log(isPositive(-3.14159));
-console.log(isPositive(-12345));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
 const array = [];
+const newArray = [23, 46, 895]
+
 function getLast(array) {
-  return array[array.length - 1];
+  let lastItem = array[array.length - 1];
+  return lastItem;
 }
+// Second way:
+function getLast2(newArray) {
+  let lastItem2 = newArray.pop();
+  return lastItem2;
+}
+
 console.log(getLast(array));
+console.log(getLast2(newArray));
+
+// array.slice(-1) will also work, but it returns a new array, so the test fails.
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
